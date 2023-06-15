@@ -1,0 +1,169 @@
+.container>.subtitulo-About{
+  font-size: 40px;
+}
+
+
+
+
+
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.container>h1 {
+  display: flex;
+  justify-content: start;
+  font-size: 50px;
+  color: brown; 
+}
+.container {
+  color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+
+#titulo {
+    color:teal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: larger;   
+    margin: 70px;
+}
+#parrafo {
+    
+    color:white;
+    font-family: arial;
+    font-size: small;
+    margin: 50px;
+    text-align: center;
+   ;
+}
+#parrafo2 {color:white;
+    font-family: arial;
+    font-size: small;
+    margin: 50px;
+
+}
+#parrafo3 {color:white;
+    font-family: arial;
+    font-size: small;
+    margin: 50px;}
+
+    #titulo2 {
+        color:white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        margin:70px
+    }
+    #titulo3 {color:white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        margin:70px}
+
+
+        body{background-color: rgb(2, 1, 8)
+      }
+
+      /* De aca para abajo estiliza la barra de navegacion  */
+     .container-nav {
+                display: flex;
+                padding: 10px;
+                height: 50px;
+                background-color: black;
+              }
+              
+              
+              .navbar {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+              }
+              
+              
+              .brand {
+                display: flex;
+                align-items: center;
+              }
+              
+              
+              li>a {
+                padding: 8px 24px;
+              }
+              
+              
+              li {
+                list-style-type: none;
+              }
+              
+              
+              a {
+                color: white;
+                text-decoration:none;
+              }
+              
+              
+              .nav-links {
+                display: flex;
+                align-items: center;
+              }
+              
+              
+              .button-menu-toggle {
+                display: none;
+              }    
+              /* Agregar el siguiente código CSS a tu archivo “styles.css” 
+              para hacer que la barra de navegación sea adaptable, utilizando una media query: */
+
+
+              /* Este código oculta los enlaces de navegación y muestra el botón “Menú” en pantallas con un ancho de 768 píxeles o menos, y 
+              utiliza una clase extra para poder hacer que el botón menú despliegue los enlaces . */
+
+              @media (max-width: 768px) {
+                .column {
+                  flex: 100%;
+                }
+              
+              
+                .nav-links {
+                  display: none;
+                }
+              
+              
+                .button-menu-toggle {
+                  display: block;
+                  background-color: white;
+                  border:none;
+                  border-radius: 50px;
+                  padding: 0 24px;
+                  font-family: monospace;
+                  font-weight: bold;
+                  font-size: 20px;
+                }
+               
+                .nav-links.nav-links-responsive {
+                  position: absolute;
+                  display: flex;
+                  background-color: rgba(20,20,20,0.95);
+                  width: 100%;
+                  height: 100%;
+                  top: 70px;
+                  left: 0;
+                  flex-direction: column;
+                  padding-top: 200px;
+                  align-items: center;
+                  gap:70px;
+                  font-size: 40px;
+              
+              
+                }
+              }
+
+              /* Agregar JavaScript para alternar la visibilidad de los enlaces de 
+              navegación cuando se haga clic en el botón “Menú”.  */
+     
